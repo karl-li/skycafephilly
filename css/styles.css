@@ -1,0 +1,128 @@
+body {
+    font-family: Avenir Next;
+    font-weight: bold;
+    font-size: 24px;
+    color: #30226D;
+}
+
+.navbar-light {
+    color: #30226D;
+}
+
+h1 {
+    font-family: Rubik Mono One;
+    font-size: 4rem;
+    color: #F7B500;
+}
+
+h2 {
+    font-family: Rubik Mono One;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #F7B500;
+    margin: 0px;
+    text-align: center;
+    background-color: #30226D;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+}
+
+h4 {
+    font-weight: bolder;
+}
+
+.hero-img {
+    margin-bottom: -1px;
+    width: 100vw;
+}
+
+.hero-text {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.nav-tabs {
+    border: none;
+    width: 100%;
+}
+
+.nav-tabs .nav-item {
+    font-weight: bold;
+    margin-bottom: -1px;
+    border-radius: 0px;
+    background-color: #D6D3E2;
+    width: 20%;
+}
+
+.nav-tabs .nav-item .nav-link {
+    text-align: center;
+    border: none;
+    color: #30226D;
+    border-radius: 0px;
+    font-size: 24px;
+}
+
+.nav-tabs .nav-item .nav-link:hover {
+    background-color: #EAE8F0;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    background: #EAE8F0;
+}
+
+.tab-content .tab-pane {
+    background: white;
+    text-align: center;
+}
+
+.row {
+    background: white;
+    margin-bottom: -1px;
+}
+
+.owner-img {
+    max-width: 50vw;
+}
+
+.owner-text {
+    margin: 4rem;
+}
+
+input {
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.contact-form {
+    margin: 1rem;
+}
+
+.reviews, .location, .hours, .social {
+    text-align: center;
+}
+
+.submit {
+    background: #30226D;
+    border: #30226D;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.submit:hover {
+    background: #412E94;
+    border: #412E94;
+}
+
