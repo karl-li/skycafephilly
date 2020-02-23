@@ -36,18 +36,29 @@ h4 {
 }
 
 .hero-img {
+    background-image: url(img/Hero.png);
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 450px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
     margin-bottom: -1px;
-    width: 100vw;
+    width: 100%;
 }
 
 .hero-text {
     color: white;
     font-weight: bold;
+    /* text-align: center;
+    line-height: 450px; */
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* z-index: 999; */
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 15%; /* Adjust this value to move the positioned div up and down */
     text-align: center;
+    width: 60%;
 }
 
 .nav-tabs {
@@ -82,6 +93,7 @@ h4 {
 .tab-content .tab-pane {
     background: white;
     text-align: center;
+    padding: 20px;
 }
 
 .row {
@@ -90,11 +102,11 @@ h4 {
 }
 
 .owner-img {
-    max-width: 50vw;
+    width: 100%;
 }
 
 .owner-text {
-    margin: 4rem;
+    margin: 3rem;
 }
 
 input {
@@ -113,6 +125,14 @@ input {
     text-align: center;
 }
 
+.social > h2 {
+    margin-bottom: 20px;
+}
+.reviews > p, .location > p, .hours > p {
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
 .submit {
     background: #30226D;
     border: #30226D;
@@ -126,3 +146,18 @@ input {
     border: #412E94;
 }
 
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    .hero-text {
+        top: 20%;
+    }
+  }
+  
+  .philly-inquirer-logo {
+      padding-bottom: 20px;
+  }

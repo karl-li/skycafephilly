@@ -1,0 +1,1 @@
+getAccordion("#tabs",768);
