@@ -23,6 +23,7 @@ h2 {
     margin: 0px;
     text-align: center;
     background-color: #30226D;
+    padding: 20px;
 }
 
 h3 {
@@ -56,7 +57,7 @@ h4 {
     margin: 0 auto;
     left: 0;
     right: 0;
-    top: 15%; /* Adjust this value to move the positioned div up and down */
+    top: 17%; /* Adjust this value to move the positioned div up and down */
     text-align: center;
     width: 60%;
 }
@@ -160,4 +161,23 @@ input {
   
   .philly-inquirer-logo {
       padding-bottom: 20px;
+      max-width: 50vw;
+  }
+
+  body > div.section.photos > div > div {
+      padding: 0px;
+  }
+
+  img {
+      width: 100%;
+      height: auto;
+  }
+
+  .section.social > div > a > img {
+      width: 60px;
+      height: 60px;
+  }
+
+  .skycafe-logo {
+      min-width: 40px;
   }
