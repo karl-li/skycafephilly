@@ -5,7 +5,7 @@ body {
     color: #30226D;
 }
 
-.navbar-light {
+.navbar-light .navbar-toggler {
     color: #30226D;
 }
 
@@ -180,4 +180,25 @@ input {
 
   .skycafe-logo {
       min-width: 40px;
+  }
+
+  h4.panel-title {
+    text-align: center;
+    border: none;
+    border-radius: 0px;
+    font-size: 24px;
+    background-color: #D6D3E2;
+    margin-bottom: 0px;
+    padding: 20px;
+  }
+
+  h4.panel-title:hover {
+    background: #EAE8F0;
+  }
+  
+  h4.panel-title > a {
+    font-weight: bold;
+    color: #30226D;
+    text-decoration: none;
+    text-transform: uppercase;
   }
