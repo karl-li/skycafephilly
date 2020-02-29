@@ -36,6 +36,16 @@
                 <img src="img/logo.svg" height="40" width="40" class="skycafe-logo"/>
             </a>
     </nav>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
     <!-- Hero Section -->
     <div class="hero-img">
             <!-- <img src="img/Hero.png" class="img-fluid mx-auto text-center" alt="Sky Cafe Spread"> -->
@@ -70,49 +80,49 @@
                 <a class="nav-link" href="#rice-dishes" role="tab" data-toggle="tab" aria-controls="rice-dishes" aria-selected="false">RICE DISHES</a>
               </li>
         </ul>
-        <!-- Menu Tab Content -->
-        <div class="tab-content">
+        <!-- Menu Tab Content for Desktop -->
+        <div class="tab-content hide-mobile">
             <div role="tabpanel" class="tab-pane show active" id="appetizers">
                 <div class="row">
-                    <div class="col">
+                    <div class="column">
                         <p>House Style Salad</p>
                         <p>$6.50</p>
                     </div>
-                    <div class="col">
+                    <div class="column">
                         <p>Wonton Soup</p>
                         <p>$3.50</p>
                     </div>
-                    <div class="col">
+                    <div class="column">
                         <p>Spring Roll</p>
                         <p>$3.50</p>
                     </div>
-                    <div class="col">
+                    <div class="column">
                         <p>Chicken Wing</p>
                         <p>$5.00</p>
                     </div>
-                    <div class="col">
+                    <div class="column">
                         <p>Fried Wonton</p>
                         <p>$3.50</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="column">
                         <p>Satay Padang Beef</p>
                         <p>$7.50</p>
                     </div>
-                    <div class="col">
+                    <div class="column">
                         <p>Satay Pork or Chicken</p>
                         <p>$7.00</p>
                     </div>
-                    <div class="col">
+                    <div class="column">
                         <p>Lamb Satay</p>
                         <p>$8.00</p>
                     </div>
-                    <div class="col">
+                    <div class="column">
                         <p>Batagor</p>
                         <p>$7.00</p>
                     </div>
-                    <div class="col">
+                    <div class="column">
                         <p>Gado Gado</p>
                         <p>$7.50</p>
                     </div>
@@ -120,108 +130,108 @@
             </div>
             <div role="tabpanel" class="tab-pane" id="beverages">
                 <div class="row">
-                    <div class="col"><p>Soda</p><p>$1.50</p></div>
-                    <div class="col"><p>Lemonade</p><p>$2.50</p></div>
-                    <div class="col"><p>Coconut Juice</p><p>$3.00</p></div>
-                    <div class="col"><p>Passion Fruit Juice</p><p>$2.50</p></div>
-                    <div class="col"><p>Es Teler</p><p>$4.50</p></div>
+                    <div class="column"><p>Soda</p><p>$1.50</p></div>
+                    <div class="column"><p>Lemonade</p><p>$2.50</p></div>
+                    <div class="column"><p>Coconut Juice</p><p>$3.00</p></div>
+                    <div class="column"><p>Passion Fruit Juice</p><p>$2.50</p></div>
+                    <div class="column"><p>Es Teler</p><p>$4.50</p></div>
                 </div>
                 <div class="row">
-                    <div class="col"><p>Avocado Juice</p><p>$4.50</p></div>
-                    <div class="col"><p>Soda Gembria</p><p>$2.50</p></div>
-                    <div class="col"><p>Soursop Juice</p><p>$4.50</p></div>
-                    <div class="col"><p>Durian Juice</p><p>$6.00</p></div>
-                    <div class="col"><p>Es Cendol</p><p>$4.50</p></div>
+                    <div class="column"><p>Avocado Juice</p><p>$4.50</p></div>
+                    <div class="column"><p>Soda Gembria</p><p>$2.50</p></div>
+                    <div class="column"><p>Soursop Juice</p><p>$4.50</p></div>
+                    <div class="column"><p>Durian Juice</p><p>$6.00</p></div>
+                    <div class="column"><p>Es Cendol</p><p>$4.50</p></div>
                 </div>
                 <div class="row">
-                    <div class="col"><p>The Kotak</p><p>$1.50</p></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
+                    <div class="column"><p>The Kotak</p><p>$1.50</p></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
                 </div>
             </div>
             <div role="tabpanel" class="tab-pane" id="side-orders">
                 <div class="row">
-                    <div class="col"><p>White Rice</p><p>$1.50</p></div>
-                    <div class="col"><p>Coconut Rice</p><p>$2.00</p></div>
-                    <div class="col"><p>Fried Tempe</p><p>$3.00</p></div>
-                    <div class="col"><p>Petai Beans</p><p>$4.00</p></div>
-                    <div class="col"><p>Sambal</p><p>$1.50</p></div>
+                    <div class="column"><p>White Rice</p><p>$1.50</p></div>
+                    <div class="column"><p>Coconut Rice</p><p>$2.00</p></div>
+                    <div class="column"><p>Fried Tempe</p><p>$3.00</p></div>
+                    <div class="column"><p>Petai Beans</p><p>$4.00</p></div>
+                    <div class="column"><p>Sambal</p><p>$1.50</p></div>
                 </div>
                 <div class="row">
-                    <div class="col"><p>Fried Tofu</p><p>$2.00</p></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
+                    <div class="column"><p>Fried Tofu</p><p>$2.00</p></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
                 </div>
             </div>
             <div role="tabpanel" class="tab-pane" id="noodles">
                 <div class="row">
-                    <div class="col"><p>N1. Mie Komplit</p><p>$7.50</p></div>
-                    <div class="col"><p>N2. Mie Seafood</p><p>$7.50</p></div>
-                    <div class="col"><p>N3. Mie Kepiting</p><p>$8.00</p></div>
-                    <div class="col"><p>N4. Mie Bbq Pork</p><p>$6.50</p></div>
-                    <div class="col"><p>N5. Mie Ayam</p><p>$6.50</p></div>
+                    <div class="column"><p>N1. Mie Komplit</p><p>$7.50</p></div>
+                    <div class="column"><p>N2. Mie Seafood</p><p>$7.50</p></div>
+                    <div class="column"><p>N3. Mie Kepiting</p><p>$8.00</p></div>
+                    <div class="column"><p>N4. Mie Bbq Pork</p><p>$6.50</p></div>
+                    <div class="column"><p>N5. Mie Ayam</p><p>$6.50</p></div>
                 </div>
                 <div class="row">
-                    <div class="col"><p>N6. Mie Bakso</p><p>$6.50</p></div>
-                    <div class="col"><p>N7. Kwetiaw Goreng</p><p>$8.00</p></div>
-                    <div class="col"><p>N8. Bihun Goreng</p><p>$8.00</p></div>
-                    <div class="col"><p>N9. Mie Goreng</p><p>$8.00</p></div>
-                    <div class="col"><p>N10. Mie Belacan</p><p>$8.50</p></div>
+                    <div class="column"><p>N6. Mie Bakso</p><p>$6.50</p></div>
+                    <div class="column"><p>N7. Kwetiaw Goreng</p><p>$8.00</p></div>
+                    <div class="column"><p>N8. Bihun Goreng</p><p>$8.00</p></div>
+                    <div class="column"><p>N9. Mie Goreng</p><p>$8.00</p></div>
+                    <div class="column"><p>N10. Mie Belacan</p><p>$8.50</p></div>
                 </div>
                 <div class="row">
-                    <div class="col"><p>N11. Kari Bihun</p><p>$8.00</p></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
+                    <div class="column"><p>N11. Kari Bihun</p><p>$8.00</p></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
                 </div>
             </div>
             <div role="tabpanel" class="tab-pane" id="rice-dishes">
                 <div class="row">
-                    <div class="col"><p>R1. Nasi Lemak Ayam Goreng</p><p>$7.50</p></div>
-                    <div class="col"><p>R2. Nasi Lemak Rendang</p><p>$7.50</p></div>
-                    <div class="col"><p>R3. Nasi Uduk</p><p>$8.00</p></div>
-                    <div class="col"><p>R4. Nasi Goreng Special</p><p>$6.50</p></div>
-                    <div class="col"><p>R5. Nasi Goreng Seafood</p><p>$6.50</p></div>
+                    <div class="column"><p>R1. Nasi Lemak Ayam Goreng</p><p>$7.50</p></div>
+                    <div class="column"><p>R2. Nasi Lemak Rendang</p><p>$7.50</p></div>
+                    <div class="column"><p>R3. Nasi Uduk</p><p>$8.00</p></div>
+                    <div class="column"><p>R4. Nasi Goreng Special</p><p>$6.50</p></div>
+                    <div class="column"><p>R5. Nasi Goreng Seafood</p><p>$6.50</p></div>
                 </div>
                 <div class="row">
-                    <div class="col"><p>R6. Nasi Goreng Ikan Asin</p><p>$6.50</p></div>
-                    <div class="col"><p>R7. Nasi Goreng Petai</p><p>$8.00</p></div>
-                    <div class="col"><p>R8. Nasi Sayur</p><p>$8.00</p></div>
-                    <div class="col"><p>R9. Lontong Sayur</p><p>$8.00</p></div>
-                    <div class="col"><p>R10. Nasi Pecel Lele</p><p>$8.50</p></div>
+                    <div class="column"><p>R6. Nasi Goreng Ikan Asin</p><p>$6.50</p></div>
+                    <div class="column"><p>R7. Nasi Goreng Petai</p><p>$8.00</p></div>
+                    <div class="column"><p>R8. Nasi Sayur</p><p>$8.00</p></div>
+                    <div class="column"><p>R9. Lontong Sayur</p><p>$8.00</p></div>
+                    <div class="column"><p>R10. Nasi Pecel Lele</p><p>$8.50</p></div>
                 </div>
                 <div class="row">
-                    <div class="col"><p>R11. Nasi Pecel Ayam Goreng</p><p>$6.50</p></div>
-                    <div class="col"><p>R12. Nasi Ayam Sambal Hijau</p><p>$8.00</p></div>
-                    <div class="col"><p>R13. Nasi Ikan Balado</p><p>$8.00</p></div>
-                    <div class="col"><p>R14. Soto Medan</p><p>$8.00</p></div>
-                    <div class="col"><p>R15. Nasi Urap</p><p>$8.50</p></div>
+                    <div class="column"><p>R11. Nasi Pecel Ayam Goreng</p><p>$6.50</p></div>
+                    <div class="column"><p>R12. Nasi Ayam Sambal Hijau</p><p>$8.00</p></div>
+                    <div class="column"><p>R13. Nasi Ikan Balado</p><p>$8.00</p></div>
+                    <div class="column"><p>R14. Soto Medan</p><p>$8.00</p></div>
+                    <div class="column"><p>R15. Nasi Urap</p><p>$8.50</p></div>
                 </div>
                 <div class="row">
-                    <div class="col"><p>R16. Nasi Campur Medan</p><p>$6.50</p></div>
-                    <div class="col"><p>R17. Nasi Campur Ayam Goreng</p><p>$8.00</p></div>
-                    <div class="col"><p>R18. Nasi Campur Rendang</p><p>$8.00</p></div>
-                    <div class="col"><p>R19. Nasi Ayam Bakar Padang</p><p>$8.00</p></div>
-                    <div class="col"><p>R20. Sop Buntut/Oxtail Soup</p><p>$8.50</p></div>
+                    <div class="column"><p>R16. Nasi Campur Medan</p><p>$6.50</p></div>
+                    <div class="column"><p>R17. Nasi Campur Ayam Goreng</p><p>$8.00</p></div>
+                    <div class="column"><p>R18. Nasi Campur Rendang</p><p>$8.00</p></div>
+                    <div class="column"><p>R19. Nasi Ayam Bakar Padang</p><p>$8.00</p></div>
+                    <div class="column"><p>R20. Sop Buntut/Oxtail Soup</p><p>$8.50</p></div>
                 </div>
                 <div class="row">
-                    <div class="col"><p>R21. Fish of the Day</p><p>MP</p></div>
-                    <div class="col"><p>R22. Original Nasi Padang</p><p>$8.00</p></div>
-                    <div class="col"><p>R23. Nasi Bungkus</p><p>$8.00</p></div>
-                    <div class="col"><p>R24. Soto Betawi</p><p>$8.00</p></div>
-                    <div class="col"><p>R25. Nasi Ayam Bakar Kecap</p><p>$8.50</p></div>
+                    <div class="column"><p>R21. Fish of the Day</p><p>MP</p></div>
+                    <div class="column"><p>R22. Original Nasi Padang</p><p>$8.00</p></div>
+                    <div class="column"><p>R23. Nasi Bungkus</p><p>$8.00</p></div>
+                    <div class="column"><p>R24. Soto Betawi</p><p>$8.00</p></div>
+                    <div class="column"><p>R25. Nasi Ayam Bakar Kecap</p><p>$8.50</p></div>
                 </div>
                 <div class="row">
-                    <div class="col"><p>R26. Marinated Bbq Beef Ribs</p><p>$10.50</p></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
+                    <div class="column"><p>R26. Marinated Bbq Beef Ribs</p><p>$10.50</p></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
                 </div>
             </div>
         </div>
@@ -248,18 +258,18 @@
     <div class="section photos" id="photos">
         <h2>Photos</h2>
         <div class="row">
-            <div class="col"><img src="img/Photo 1.png" alt=""></div>
-            <div class="col"><img src="img/Photo 2.png" alt=""></div>
-            <div class="col"><img src="img/Photo 3.png" alt=""></div>
-            <div class="col"><img src="img/Photo 4.png" alt=""></div>
-            <div class="col"><img src="img/Photo 5.png" alt=""></div>
+            <div class="column"><img src="img/Photo 1.png" alt=""></div>
+            <div class="column"><img src="img/Photo 2.png" alt=""></div>
+            <div class="column"><img src="img/Photo 3.png" alt=""></div>
+            <div class="column"><img src="img/Photo 4.png" alt=""></div>
+            <div class="column"><img src="img/Photo 5.png" alt=""></div>
         </div>
         <div class="row">
-            <div class="col"><img src="img/Photo 6.png" alt=""></div>
-            <div class="col"><img src="img/Photo 7.png" alt=""></div>
-            <div class="col"><img src="img/Photo 8.png" alt=""></div>
-            <div class="col"><img src="img/Photo 9.png" alt=""></div>
-            <div class="col"><img src="img/Photo 10.png" alt=""></div>
+            <div class="column"><img src="img/Photo 6.png" alt=""></div>
+            <div class="column"><img src="img/Photo 7.png" alt=""></div>
+            <div class="column"><img src="img/Photo 8.png" alt=""></div>
+            <div class="column"><img src="img/Photo 9.png" alt=""></div>
+            <div class="column"><img src="img/Photo 10.png" alt=""></div>
         </div>
         <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
