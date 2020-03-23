@@ -4,14 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
-    <!-- Additional CSS -->
+    <!-- Additional fonts -->
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="css/styles.css">
     <title>Sky Cafe Philly: A Taste of Indonesia</title>
 </head>
 <body>
@@ -19,7 +13,7 @@
     <nav class="navbar navbar-light">
         <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
         <a href="index.html" class="navbar-brand">
-            <img src="img/logo.svg" height="40" width="40" class="skycafe-logo"/>
+            <img src="assets/img/logo.svg" height="40" width="40" class="skycafe-logo"/>
         </a>
     </nav>
     <div id="myNav" class="overlay">
@@ -37,7 +31,7 @@
     </div>
     <!-- Hero Section -->
     <div class="hero-img">
-            <!-- <img src="img/Hero.png" class="img-fluid mx-auto text-center" alt="Sky Cafe Spread"> -->
+            <!-- <img src="assets/img/Hero.png" class="img-fluid mx-auto text-center" alt="Sky Cafe Spread"> -->
             <div class="hero-text">
                 <h1>Sky Cafe</h1>
                 <h3>A TASTE OF INDONESIA</h2>
@@ -233,7 +227,7 @@
         <h2>About</h2>
         <div class="row">
             <div class="col-lg-6">
-                <img src="img/owners.png" class="owner-img img-fluid" alt="Sky Cafe owners Betty Yu and her mother Lily Tjia">
+                <img src="assets/img/owners.png" class="owner-img img-fluid" alt="Sky Cafe owners Betty Yu and her mother Lily Tjia">
             </div>
             <div class="col-lg-6">
                 <p class="owner-text">Sky Cafe, is one of Philly’s oldest Indonesian establishments and a fixture of South Philly’s  diverse neighborhood. 
@@ -247,18 +241,18 @@
     <div class="section photos" id="photos">
         <h2>Photos</h2>
         <div class="row">
-            <div class="col"><img src="img/Photo 1.png" alt=""></div>
-            <div class="col"><img src="img/Photo 2.png" alt=""></div>
-            <div class="col"><img src="img/Photo 3.png" alt=""></div>
-            <div class="col"><img src="img/Photo 4.png" alt=""></div>
-            <div class="col"><img src="img/Photo 5.png" alt=""></div>
+            <div class="col"><img src="assets/img/Photo 1.png" alt=""></div>
+            <div class="col"><img src="assets/img/Photo 2.png" alt=""></div>
+            <div class="col"><img src="assets/img/Photo 3.png" alt=""></div>
+            <div class="col"><img src="assets/img/Photo 4.png" alt=""></div>
+            <div class="col"><img src="assets/img/Photo 5.png" alt=""></div>
         </div>
         <div class="row">
-            <div class="col"><img src="img/Photo 6.png" alt=""></div>
-            <div class="col"><img src="img/Photo 7.png" alt=""></div>
-            <div class="col"><img src="img/Photo 8.png" alt=""></div>
-            <div class="col"><img src="img/Photo 9.png" alt=""></div>
-            <div class="col"><img src="img/Photo 10.png" alt=""></div>
+            <div class="col"><img src="assets/img/Photo 6.png" alt=""></div>
+            <div class="col"><img src="assets/img/Photo 7.png" alt=""></div>
+            <div class="col"><img src="assets/img/Photo 8.png" alt=""></div>
+            <div class="col"><img src="assets/img/Photo 9.png" alt=""></div>
+            <div class="col"><img src="assets/img/Photo 10.png" alt=""></div>
         </div>
         <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -291,7 +285,7 @@
     <div class="section reviews" id="reviews">
         <h2>Reviews</h2>
         <p>“At $7.50 a platter, it's hard to beat for flavors with this kind of pop and personality!”</p>
-        <img class="philly-inquirer-logo" src="img/philly-inquirer-logo.svg" alt="">
+        <img class="philly-inquirer-logo" src="assets/img/philly-inquirer-logo.svg" alt="">
     </div>
     <!-- Location Section -->
     <div class="section location" id="location">
@@ -333,9 +327,9 @@
     <div class="section social" id="social">
         <h2>Social</h2>
         <div class="container">
-            <a href="https://www.facebook.com/skycafephilly/"><img src="icon/fb.svg" alt=""></a>
-            <a href="https://www.instagram.com/skycafephilly/"><img src="icon/insta.svg" alt=""></a>
-            <a href="https://www.yelp.com/biz/sky-cafe-philadelphia-2"><img src="icon/yelp.svg" alt=""></a>
+            <a href="https://www.facebook.com/skycafephilly/"><img src="assets/icon/fb.svg" alt=""></a>
+            <a href="https://www.instagram.com/skycafephilly/"><img src="assets/icon/insta.svg" alt=""></a>
+            <a href="https://www.yelp.com/biz/sky-cafe-philadelphia-2"><img src="assets/icon/yelp.svg" alt=""></a>
         </div>
     </div>
     <!-- <div>
@@ -367,11 +361,7 @@
     <footer>
         <p>© 2020 Sky Cafe. All Rights Reserved.</p>
     </footer>
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD65p76_JR9AvtcCTwSSGU7n6L3YVlwg94&callback=initMap"></script>
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="./bundle.js"></script>
 </body>
 </html>
