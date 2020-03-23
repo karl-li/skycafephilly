@@ -11,22 +11,22 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-light">
-        <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <span style="font-size:40px;cursor:pointer" onclick="window.openNav()">&#9776;</span>
         <a href="index.html" class="navbar-brand">
             <img src="assets/img/logo.svg" height="40" width="40" class="skycafe-logo"/>
         </a>
     </nav>
     <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="window.closeNav()">&times;</a>
         <div class="overlay-content">
-            <a class="nav-link" href="#menu" onclick="closeNav()">Menu</a>
-            <a class="nav-link" href="#about" onclick="closeNav()">About</a>
-            <a class="nav-link" href="#photos" onclick="closeNav()">Photos</a>
-            <a class="nav-link" href="#reviews" onclick="closeNav()">Reviews</a>
-            <a class="nav-link" href="#location" onclick="closeNav()">Location</a>
-            <a class="nav-link" href="#hours" onclick="closeNav()">Hours</a>
-            <a class="nav-link" href="#contact" onclick="closeNav()">Contact</a>
-            <a class="nav-link" href="#social" onclick="closeNav()">Social</a>
+            <a class="nav-link" href="#menu" onclick="window.closeNav()">Menu</a>
+            <a class="nav-link" href="#about" onclick="window.closeNav()">About</a>
+            <a class="nav-link" href="#photos" onclick="window.closeNav()">Photos</a>
+            <a class="nav-link" href="#reviews" onclick="window.closeNav()">Reviews</a>
+            <a class="nav-link" href="#location" onclick="window.closeNav()">Location</a>
+            <a class="nav-link" href="#hours" onclick="window.closeNav()">Hours</a>
+            <a class="nav-link" href="#contact" onclick="window.closeNav()">Contact</a>
+            <a class="nav-link" href="#social" onclick="window.closeNav()">Social</a>
         </div>
     </div>
     <!-- Hero Section -->
@@ -361,7 +361,7 @@
     <footer>
         <p>© 2020 Sky Cafe. All Rights Reserved.</p>
     </footer>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD65p76_JR9AvtcCTwSSGU7n6L3YVlwg94&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD65p76_JR9AvtcCTwSSGU7n6L3YVlwg94&callback=window.initMap"></script>
     <script src="./bundle.js"></script>
 </body>
 </html>
