@@ -21,9 +21,7 @@ window.initMap = function () {
 
 function getAccordionCb(element_id, screen) {
   return () => {
-    $(window).resize(function () {
-      location.reload();
-    });
+    console.log("something");
 
     if ($(window).width() < screen) {
       var concat = "";
@@ -59,6 +57,9 @@ function getAccordionCb(element_id, screen) {
         .attr("aria-expanded", "true");
       $(element_id).remove();
       $(".tab-content").remove();
+    } 
+    else {
+      location.reload();
     }
   };
 }
